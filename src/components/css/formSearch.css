@@ -21,3 +21,8 @@
     font-size: 2em;
     padding: 10px 0;
 }
+
+@media (max-width: 576px) {
+    .msg__inputEmpty {
+        width: 100%;
+    }

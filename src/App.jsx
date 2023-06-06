@@ -5,8 +5,17 @@ import getRandomNumber from "./utils/getRandomNumber";
 import LocationInfo from "./components/LocationInfo";
 import ResidentCard from "./components/ResidentCard";
 import FormSearch from "./components/FormSearch";
+import Pagination from "./components/Pagination";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 10; // El número total de páginas en tu aplicación
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    // Aquí puedes realizar cualquier acción adicional, como obtener datos de la página actual, etc.
+  };
+  
   const randomId = getRandomNumber(126);
 
   const [idLocation, setIdLocation] = useState(randomId);
@@ -35,6 +44,11 @@ function App() {
           </div>
         </>
       )}
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
     </div>
   );
 }
