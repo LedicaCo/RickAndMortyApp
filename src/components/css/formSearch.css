@@ -1,12 +1,23 @@
 .msg__empty {
     color: #fff;
+    padding: 15px 25px;
 }
 
-.msg__search--content {
-    width: 35%;
-    height: 200px;
-    background-color: #ffffff99;
+.msg__inputEmpty {
+    width: 50%;
+    height: 50px;
+    background-color: #062226;
     border-radius: 0.8em;
     text-align: center;
+    border: 1px solid orange;
+    margin: 0 auto 20px;
+    display:flex;
+    justify-content: center;
 
+}
+
+.bxs-error {
+    color: orange;
+    font-size: 2em;
+    padding: 10px 0;
 }

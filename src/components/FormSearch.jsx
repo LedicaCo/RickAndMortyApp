@@ -34,7 +34,11 @@ const FormSearch = ({ setIdLocation }) => {
         <button className="btn__search--location">Search</button>
       </form>
       {
-        inputIsEmpty && <h3 className="msg__empty">The field cannot be empty</h3>
+        inputIsEmpty &&
+        <div className="msg__inputEmpty">
+          <i className='bx bxs-error'></i>
+          <h3 className="msg__empty">The field cannot be empty</h3>
+        </div> 
       }      
     </>
   );
