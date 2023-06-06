@@ -1,0 +1,46 @@
+.location__content {
+    width: 50%;
+    height: 150px;
+    background-color: #062226;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    margin-bottom: 30px;
+}
+
+.location__name {
+    color: greenyellow;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.location__list {
+    width: 90%;
+    margin-top: 17px;
+    margin-left: 20px;
+    line-height: 1.4em;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.location__item {
+    display: grid;
+}
+
+.location__label {
+    color: #fff;
+}
+
+.location__value {
+    color: pink;
+    font-size: 12px;
+}
+
+    @media (max-width: 575.98px) {
+    .location__content {
+        width: 100%;
+    }
+}

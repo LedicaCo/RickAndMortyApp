@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;   
+    
+}
+
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+input, button {
+    border: none;
+    font-family: inherit;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}

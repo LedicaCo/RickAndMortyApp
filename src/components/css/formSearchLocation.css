@@ -1,0 +1,23 @@
+.form__location {
+    margin: 30px auto;
+}
+
+.input__location {
+    padding: 7px 5px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.btn__search--location {
+    padding: 7px 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: green;
+    color: #fff;    
+}
+
+.btn__search--location:hover {
+    background-color: #062226;
+    color: #fff;
+    transition: 300ms ease-in-out;
+}

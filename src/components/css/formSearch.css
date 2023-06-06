@@ -1,0 +1,12 @@
+.msg__empty {
+    color: #fff;
+}
+
+.msg__search--content {
+    width: 35%;
+    height: 200px;
+    background-color: #ffffff99;
+    border-radius: 0.8em;
+    text-align: center;
+
+}
