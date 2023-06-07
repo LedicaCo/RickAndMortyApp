@@ -103,12 +103,15 @@ hr {
       margin-left: 25px;
   }
 
-  @media screen and (max-width: 576px) {
-    .resident__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 576px) {
+.resident__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
   
-        width: 100%;
-        max-width: 100%;
+.resident {
+    width: 100%;
+    max-width: 100%; /* Modificado */
+    }
   }
