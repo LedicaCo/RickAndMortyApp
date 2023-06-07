@@ -54,10 +54,24 @@
     .msg__inputEmpty {
     width: 100%;        
     }
+    
+    .msg__id {
+        width: 100%;
+    }
     .bxs-error {
         font-size: 1.5em;
     }
     .msg__empty {
         font-size: 1em;
+    }
+    
+    .msg__id--location {
+        font-size: 0.8em;
+        padding: 15px 10px; 
+    }
+    
+    .bxs-confused {
+        font-size: 1.5em;
+        
     }
     }
