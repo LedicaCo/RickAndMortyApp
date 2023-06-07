@@ -5,16 +5,10 @@ import getRandomNumber from "./utils/getRandomNumber";
 import LocationInfo from "./components/LocationInfo";
 import ResidentCard from "./components/ResidentCard";
 import FormSearch from "./components/FormSearch";
-import Pagination from "./components/Pagination";
+
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 10; // El número total de páginas en tu aplicación
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-    // Aquí puedes realizar cualquier acción adicional, como obtener datos de la página actual, etc.
-  };
+  
   
   const randomId = getRandomNumber(126);
 
@@ -30,25 +24,24 @@ function App() {
 
   return (
     <div className="app app__content">
-      <img className="app__banner" src="./banner.png" alt="banner" />
+      <img className="app__banner" src="./banner.jpg" alt="banner" />
       <FormSearch setIdLocation={setIdLocation} />
       {hasError ? (
-        <h2>Ooops, Hey! you must provide an id from 1 to 126</h2>
+        <div className="msg__id">
+          <i class='bx bxs-confused'></i>
+          <h4 className="msg__id--location">Hey! you must provide an id from 1 to 126</h4>
+        </div>
       ) : (
         <>
           <LocationInfo location={location} />
-          <div className="resident-container">
+          <div className="resident__container">
             {location?.residents.map((url) => (
               <ResidentCard url={url} key={url} />
             ))}
           </div>
         </>
       )}
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
+     
     </div>
   );
 }

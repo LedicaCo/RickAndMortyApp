@@ -3,6 +3,12 @@
     padding: 15px 25px;
 }
 
+.msg__id--location {
+    color: #fff;
+    padding: 15px 25px;
+    
+}
+
 .msg__inputEmpty {
     width: 50%;
     height: 50px;
@@ -13,7 +19,22 @@
     margin: 0 auto 20px;
     display:flex;
     justify-content: center;
+    
 
+}
+
+.msg__id {
+    width: 50%;
+    height: 50px;
+    background-color: #062226;
+    border-radius: 0.8em;
+    text-align: center;
+    border: 1px solid orange;
+    margin: 0 auto 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 .bxs-error {
@@ -22,7 +43,21 @@
     padding: 10px 0;
 }
 
+.bxs-confused {
+    color: orange;
+    font-size: 2em;
+    padding: 10px 0;
+    
+}
+
 @media (max-width: 576px) {
     .msg__inputEmpty {
-        width: 100%;
+    width: 100%;        
+    }
+    .bxs-error {
+        font-size: 1.5em;
+    }
+    .msg__empty {
+        font-size: 1em;
+    }
     }
