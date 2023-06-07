@@ -101,7 +101,7 @@ hr {
       margin-left: 25px;
   }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
     .resident__container {
         display: flex;
         flex-direction: column;
