@@ -22,9 +22,9 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     gap: 1rem;
-  }
-  
-  .resident {
+}
+
+.resident {
     font-size: 1rem;
     width: 100%;
     max-width: 350px;
@@ -33,8 +33,13 @@ body {
     border-radius: 0.8em;
     overflow: hidden;
     margin-bottom: 20px;
-  }
-  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+
+    
+   
+}
+
 .resident__header {
     position: relative;
 }
@@ -68,7 +73,7 @@ body {
 }
 
 .resident__card {
-    height: 220px;
+    height: 210px;
 }
 
 .resident__name {
@@ -98,7 +103,7 @@ hr {
       margin-left: 25px;
   }
 
-@media screen and (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .resident__container {
         display: flex;
         flex-direction: column;
