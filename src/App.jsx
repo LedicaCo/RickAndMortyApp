@@ -28,7 +28,7 @@ function App() {
       <FormSearch setIdLocation={setIdLocation} />
       {hasError ? (
         <div className="msg__id">
-          <i class='bx bxs-confused'></i>
+          <i className='bx bxs-confused'></i>
           <h4 className="msg__id--location">Hey! you must provide an id from 1 to 126</h4>
         </div>
       ) : (
